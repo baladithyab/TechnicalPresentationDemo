@@ -1,8 +1,12 @@
+'CSE 185 Technical Demo:': Prezentacja techniczna CSE 185
+Upload to S3: Prześlij do S3
 button:
+  GetVideos: Pobierz filmy
   about: O nas
   back: Wróć
   go: WEJDŹ
   home: Strona główna
+  play: bawić się
   toggle_dark: Ustaw tryb nocny
   toggle_langs: Zmień język
   upload: Przekazać plik

@@ -1,8 +1,12 @@
+'CSE 185 Technical Demo:': CSE 185 기술 데모
+Upload to S3: S3에 업로드
 button:
+  GetVideos: 비디오 가져오기
   about: 소개
   back: 뒤로가기
   go: 이동
   home: 홈
+  play: 플레이
   toggle_dark: 다크모드 토글
   toggle_langs: 언어 변경
   upload: 업로드

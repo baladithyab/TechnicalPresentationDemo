@@ -1,8 +1,12 @@
+'CSE 185 Technical Demo:': CSE 185 技术演示
+Upload to S3: 上传到 S3
 button:
+  GetVideos: 获取视频
   about: 关于
   back: 返回
   go: 确定
   home: 首页
+  play: 玩
   toggle_dark: 切换深色模式
   toggle_langs: 切换语言
   upload: 上传

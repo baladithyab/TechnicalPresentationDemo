@@ -1,8 +1,12 @@
+'CSE 185 Technical Demo:': CSE185テクニカルデモ
+Upload to S3: S3にアップロード
 button:
+  GetVideos: ビデオを入手
   about: これは？
   back: 戻る
   go: 進む
   home: ホーム
+  play: 演奏する
   toggle_dark: ダークモード切り替え
   toggle_langs: 言語切り替え
   upload: アップロード

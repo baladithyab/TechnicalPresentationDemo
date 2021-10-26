@@ -1,8 +1,12 @@
+'CSE 185 Technical Demo:': CSE 185 Technische Demo
+Upload to S3: Auf S3 hochladen
 button:
+  GetVideos: Videos abrufen
   about: Über
   back: Zurück
   go: Los
   home: Startseite
+  play: abspielen
   toggle_dark: Dunkelmodus umschalten
   toggle_langs: Sprachen ändern
   upload: Hochladen

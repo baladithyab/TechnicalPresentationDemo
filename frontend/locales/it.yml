@@ -1,8 +1,12 @@
+'CSE 185 Technical Demo:': CSE 185 Dimostrazione tecnica
+Upload to S3: Carica su S3
 button:
+  GetVideos: Ottieni video
   about: Su di me
   back: Indietro
   go: Vai
   home: Home
+  play: giocare a
   toggle_dark: Attiva/disattiva modalità scura
   toggle_langs: Cambia lingua
   upload: caricamento

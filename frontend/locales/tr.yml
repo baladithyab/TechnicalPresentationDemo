@@ -1,8 +1,12 @@
+'CSE 185 Technical Demo:': CSE 185 Teknik Demo
+Upload to S3: S3'e yükle
 button:
+  GetVideos: Videoları Alın
   about: Hakkımda
   back: Geri
   go: İLERİ
   home: Anasayfa
+  play: Oyna
   toggle_dark: Karanlık modu değiştir
   toggle_langs: Dilleri değiştir
   upload: yüklemek

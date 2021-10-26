@@ -39,7 +39,7 @@ const goToUpload = () => {
       <video class="display-block m-auto" id="video" width="352" height="198" controls></video>
     </div>
     <div>
-      <button class="btn m-3 text-sm mt-6" @click="play()">Play</button>
+      <button class="btn m-3 text-sm mt-6" @click="play()">{{t('button.play')}}</button>
 
       <button class="btn m-3 text-sm mt-6" @click="goToUpload">{{ t('button.back') }}</button>
     </div>

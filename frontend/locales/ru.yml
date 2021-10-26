@@ -1,8 +1,12 @@
+'CSE 185 Technical Demo:': Техническая демонстрация CSE 185
+Upload to S3: Загрузить в S3
 button:
+  GetVideos: Получить видео
   about: О шаблоне
   back: Назад
   go: Перейти
   home: Главная
+  play: играть
   toggle_dark: Включить темный режим
   toggle_langs: Сменить язык
   upload: загрузить

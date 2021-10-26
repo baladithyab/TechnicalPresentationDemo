@@ -1,8 +1,12 @@
+'CSE 185 Technical Demo:': CSE 185 Technical Demo
+Upload to S3: Upload to S3
 button:
+  GetVideos: Get Videos
   about: About
   back: Back
   go: GO
   home: Home
+  play: play
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
   upload: upload

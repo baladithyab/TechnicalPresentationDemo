@@ -52,7 +52,7 @@ const uploadFile = (files: any) => {
     <p class="text-4xl">
       <carbon-campsite class="inline-block" />
     </p>
-    <h1>Upload to S3</h1>
+    <h1>{{ t('Upload to S3') }}</h1>
 
     <div class="py-4" />
     <input

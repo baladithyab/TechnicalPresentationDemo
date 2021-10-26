@@ -1,8 +1,12 @@
+'CSE 185 Technical Demo:': Bản trình diễn kỹ thuật CSE 185
+Upload to S3: Tải lên S3
 button:
+  GetVideos: Tải Video
   about: Về
   back: Quay lại
   go: Đi
   home: Khởi đầu
+  play: chơi
   toggle_dark: Chuyển đổi chế độ tối
   toggle_langs: Thay đổi ngôn ngữ
   upload: tải lên

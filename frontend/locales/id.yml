@@ -1,8 +1,12 @@
+'CSE 185 Technical Demo:': Demo Teknis CSE 185
+Upload to S3: Unggah ke S3
 button:
+  GetVideos: Dapatkan Video
   about: Tentang
   back: Kembali
   go: Pergi
   home: Beranda
+  play: bermain
   toggle_dark: Ubah ke mode gelap
   toggle_langs: Ubah bahasa
   upload: mengunggah
