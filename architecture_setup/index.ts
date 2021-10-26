@@ -8,6 +8,8 @@ import {
 import { S3 } from "aws-sdk";
 import { v4 as uuidv4 } from "uuid";
 
+require("dotenv").config();
+
 var JobSettings = require("./jobs.json");
 
 const name = pulumi.runtime.getProject();
@@ -120,8 +122,8 @@ uploadbucket.onObjectCreated("onObjectCreated", (event) => {
   const emcClient = new MediaConvertClient({
     region: "us-east-1",
     credentials: {
-      accessKeyId: "AKIA4CXUV3FOYTXG2PMV",
-      secretAccessKey: "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",
+      accessKeyId: process.env.AWS_ACCESS_KEY_ID || "",
+      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY || "",
     },
     endpoint: "https://q25wbt2lc.mediaconvert.us-east-1.amazonaws.com",
   });

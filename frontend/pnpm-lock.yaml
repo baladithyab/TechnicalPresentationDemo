@@ -20,6 +20,7 @@ specifiers:
   axios: ^0.23.0
   critters: ^0.0.12
   cross-env: ^7.0.3
+  dotenv: ^10.0.0
   eslint: ^8.0.1
   https-localhost: ^4.7.0
   ioredis: ^4.28.0
@@ -63,6 +64,7 @@ dependencies:
   aws-s3: 2.0.5
   aws-sdk: 2.1013.0
   axios: 0.23.0
+  dotenv: 10.0.0
   ioredis: 4.28.0
   nprogress: 0.2.0
   pinia: 2.0.0-rc.14_typescript@4.4.4+vue@3.2.20
@@ -3869,6 +3871,11 @@ packages:
       domelementtype: 2.2.0
       domhandler: 4.2.2
     dev: true
+
+  /dotenv/10.0.0:
+    resolution: {integrity: sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==}
+    engines: {node: '>=10'}
+    dev: false
 
   /ee-first/1.1.1:
     resolution: {integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=}
