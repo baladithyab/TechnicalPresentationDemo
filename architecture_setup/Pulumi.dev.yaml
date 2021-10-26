@@ -1,2 +1,5 @@
 config:
+  TechnicalPresentationDemoTS:AWS_ACCESS_KEY_ID: AKIA4CXUV3FOSUZZPZUZ
+  TechnicalPresentationDemoTS:AWS_SECRET_ACCESS_KEY:
+    secure: AAABAPAmnsjZpJMoZ1UoAyoDikJsjA/repKymVopqOFZhqMJHEqlCRkWyLe3zf0KB6lRHWqZdTw8fhXTECwwEWXZq5866XiP
   aws:region: us-east-1

@@ -118,12 +118,20 @@ const emcRole = new aws.iam.Role("emcRole", {
   ],
 });
 
+let config = new pulumi.Config();
+const awsaccesskeyID = config.require("AWS_ACCESS_KEY_ID");
+let awssecretaccesskey = ""; //config.requireSecret("AWS_SECRET_ACCESS_KEY").get();
+
+config.getSecret("AWS_SECRET_ACCESS_KEY")?.apply((secret) => {
+  awssecretaccesskey = secret;
+});
+
 uploadbucket.onObjectCreated("onObjectCreated", (event) => {
   const emcClient = new MediaConvertClient({
     region: "us-east-1",
     credentials: {
-      accessKeyId: process.env.AWS_ACCESS_KEY_ID || "",
-      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY || "",
+      accessKeyId: awsaccesskeyID,
+      secretAccessKey: awssecretaccesskey,
     },
     endpoint: "https://q25wbt2lc.mediaconvert.us-east-1.amazonaws.com",
   });
