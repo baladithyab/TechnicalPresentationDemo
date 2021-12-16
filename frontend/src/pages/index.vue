@@ -6,12 +6,11 @@ const s3HLSObjects = ref()
 
 const videos = ref()
 const go = () => {
-  axios.get('https://cen7l2mcx6.execute-api.us-east-1.amazonaws.com/stage/echo').then((res) => {
-    console.log(res.data)
+  axios.get('https://cen7l2mcx6.execute-api.us-east-1.amazonaws.com/stage/echo').then((res: any) => {
     s3HLSObjects.value = res.data
     if (res.data.length > 0) {
-      videos.value = s3HLSObjects.value.map((obj) => { return { url: obj.Key, LastModified: new Date(obj.LastModified) } })
-      videos.value.sort((a, b) => {
+      videos.value = s3HLSObjects.value.map((obj: any) => { return { url: obj.Key, LastModified: new Date(obj.LastModified) } })
+      videos.value.sort((a: any, b: any) => {
         const fa = a.LastModified
         const fb = b.LastModified
 
@@ -23,7 +22,7 @@ const go = () => {
 
         return 0
       })
-      console.log(videos.value)
+      // console.log(videos.value)
     }
   })
 }

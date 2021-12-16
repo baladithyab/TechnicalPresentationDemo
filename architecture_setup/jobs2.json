@@ -1,0 +1,181 @@
+{
+    "Inputs": [
+        {
+            "AudioSelectors": {
+                "Audio Selector 1": {
+                    "Offset": 0,
+                    "DefaultSelection": "DEFAULT",
+                    "ProgramSelection": 1
+                }
+            },
+            "VideoSelector": {
+                "ColorSpace": "FOLLOW",
+                "Rotate": "DEGREE_0",
+                "AlphaBehavior": "DISCARD"
+            },
+            "FilterEnable": "AUTO",
+            "PsiControl": "USE_PSI",
+            "FilterStrength": 0,
+            "DeblockFilter": "DISABLED",
+            "DenoiseFilter": "DISABLED",
+            "InputScanType": "AUTO",
+            "TimecodeSource": "ZEROBASED",
+            "FileInput": "[Populated by Lambda function]"
+        }
+    ],
+    "OutputGroups": [
+        {
+            "Name": "CMAF",
+            "Outputs": [
+                {
+                    "ContainerSettings": {
+                        "Container": "CMFC"
+                    },
+                    "VideoDescription": {
+                        "CodecSettings": {
+                            "Codec": "H_264",
+                            "H264Settings": {
+                                "RateControlMode": "QVBR",
+                                "SceneChangeDetect": "TRANSITION_DETECTION",
+                                "QualityTuningLevel": "MULTI_PASS_HQ",
+                                "MaxBitrate": 3500000,
+                                "QvbrSettings": {
+                                    "QvbrQualityLevel": 8
+                                },
+                                "CodecProfile": "HIGH_10BIT"
+                            }
+                        },
+                        "Width": 1280,
+                        "Height": 720,
+                        "VideoPreprocessors": {
+                            "ColorCorrector": {
+                                "ColorSpaceConversion": "FORCE_HDR10",
+                                "Hdr10Metadata": {}
+                            }
+                        }
+                    }
+                },
+                {
+                    "ContainerSettings": {
+                        "Container": "CMFC"
+                    },
+                    "VideoDescription": {
+                        "CodecSettings": {
+                            "Codec": "H_264",
+                            "H264Settings": {
+                                "RateControlMode": "QVBR",
+                                "SceneChangeDetect": "TRANSITION_DETECTION",
+                                "QualityTuningLevel": "MULTI_PASS_HQ",
+                                "MaxBitrate": 6000000,
+                                "QvbrSettings": {
+                                    "QvbrQualityLevel": 8
+                                },
+                                "CodecProfile": "HIGH_10BIT"
+                            }
+                        },
+                        "Width": 1920,
+                        "Height": 1080,
+                        "VideoPreprocessors": {
+                            "ColorCorrector": {
+                                "ColorSpaceConversion": "FORCE_HDR10",
+                                "Hdr10Metadata": {}
+                            }
+                        }
+                    }
+                },
+                {
+                    "ContainerSettings": {
+                        "Container": "CMFC"
+                    },
+                    "VideoDescription": {
+                        "CodecSettings": {
+                            "Codec": "H_265",
+                            "H265Settings": {
+                                "RateControlMode": "QVBR",
+                                "SceneChangeDetect": "TRANSITION_DETECTION",
+                                "QualityTuningLevel": "MULTI_PASS_HQ",
+                                "MaxBitrate": 5500000,
+                                "QvbrSettings": {
+                                    "QvbrQualityLevel": 8
+                                },
+                                "CodecProfile": "MAIN10_MAIN"
+                            }
+                        },
+                        "Width": 1920,
+                        "Height": 1080,
+                        "VideoPreprocessors": {
+                            "ColorCorrector": {
+                                "ColorSpaceConversion": "FORCE_HDR10",
+                                "Hdr10Metadata": {}
+                            }
+                        }
+                    }
+                },
+                {
+                    "ContainerSettings": {
+                        "Container": "CMFC"
+                    },
+                    "VideoDescription": {
+                        "CodecSettings": {
+                            "Codec": "H_265",
+                            "H265Settings": {
+                                "RateControlMode": "QVBR",
+                                "SceneChangeDetect": "TRANSITION_DETECTION",
+                                "QualityTuningLevel": "MULTI_PASS_HQ",
+                                "MaxBitrate": 15000000,
+                                "QvbrSettings": {
+                                    "QvbrQualityLevel": 9
+                                },
+                                "CodecProfile": "MAIN10_MAIN"
+                            }
+                        },
+                        "Width": 3840,
+                        "Height": 2160
+                    }
+                },
+                {
+                    "ContainerSettings": {
+                        "Container": "CMFC"
+                    },
+                    "AudioDescriptions": [
+                        {
+                            "CodecSettings": {
+                                "Codec": "AAC",
+                                "AacSettings": {
+                                    "Bitrate": 96000,
+                                    "CodingMode": "CODING_MODE_2_0",
+                                    "SampleRate": 48000
+                                }
+                            },
+                            "AudioSourceName": "Audio Selector 1"
+                        }
+                    ]
+                },
+                {
+                    "ContainerSettings": {
+                        "Container": "CMFC"
+                    },
+                    "AudioDescriptions": [
+                        {
+                            "CodecSettings": {
+                                "Codec": "AAC",
+                                "AacSettings": {
+                                    "Bitrate": 256000,
+                                    "CodingMode": "CODING_MODE_2_0",
+                                    "SampleRate": 48000
+                                }
+                            },
+                            "AudioSourceName": "Audio Selector 1"
+                        }
+                    ]
+                }
+            ],
+            "OutputGroupSettings": {
+                "Type": "FILE_GROUP_SETTINGS",
+                "FileGroupSettings": {
+                    "Destination": "[Populated by Lambda function]"
+                }
+            }
+        }
+    ]
+}
