@@ -6,4 +6,14 @@ This repo contains files to setup a videohosting as a service pipeline in aws. D
 
 ### Steps to setup
 
-Install Node.js and Pulumi.
+Install Node.js and Pulumi and AWS CLI.
+
+Log into aws cli and clone repository.
+
+`npm i` in the `/architecture_setup` folder.
+
+Update pulumi config with aws iam account keys for a user with access to AWSMediaConvert
+
+Update UI urls to use new API gateway generated urls.
+
+`pnpm i` in `/frontend` folder then `pnpm run` to run UI.
